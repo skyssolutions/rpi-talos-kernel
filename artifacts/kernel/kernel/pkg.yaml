@@ -12,6 +12,7 @@ steps:
 
         mkdir -p /rootfs/boot
         mkdir -p /rootfs/certs
+        mkdir -p /rootfs/dtb
         cp /src/certs/signing_key.x509 /rootfs/certs/signing_key.x509
         ls -al arch/arm64/boot
         mv arch/arm64/boot/vmlinuz.efi /rootfs/boot/vmlinuz
